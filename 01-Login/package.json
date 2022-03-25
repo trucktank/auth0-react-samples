@@ -6,7 +6,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.0.2",
@@ -14,13 +16,14 @@
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "express": "^4.16.4",
-    "highlight.js": "^9.15.6",
+    "highlight.js": "^10.4.1",
     "morgan": "^1.9.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
-    "reactstrap": "^8.0.0"
+    "react-scripts": "5.0.0",
+    "reactstrap": "^8.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {},
   "eslintConfig": {
@@ -37,5 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "snyk": true
 }
